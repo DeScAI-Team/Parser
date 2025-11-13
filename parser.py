@@ -107,19 +107,12 @@ def parse_xml_to_json(xml_path):
             if kw_elem.text:
                 keywords.append(kw_elem.text.strip())
 
-        datasets = []
-        doi_elems = root.findall(".//{http://www.elsevier.com/xml/common/dtd}doi")
-        for doi_elem in doi_elems:
-            if doi_elem.text:
-                datasets.append(doi_elem.text.strip())
-
         json_data = {
             "title": title,
             "abstract": abstract,
             "body": body,
             "citations": citations,
             "references": references,
-            "datasets": datasets,
             "authors": authors,
             "publication date": publication_date,
             "keywords": keywords,

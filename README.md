@@ -31,7 +31,6 @@ Each JSON file contains:
 - `body`: Full body text
 - `citations`: List of citation references
 - `references`: List of full reference texts
-- `datasets`: List of DOI identifiers
 - `authors`: List of author names
 - `publication date`: Publication date
 - `keywords`: List of keywords
